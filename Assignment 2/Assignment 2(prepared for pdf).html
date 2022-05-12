@@ -14099,25 +14099,20 @@ Assignment 2</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Parameters of the RANSAC algorithm<br></b></p>
+<p><b>Initialized parameters for the RANSAC algorithm<br></b></p>
 <ul>
 <b><li> s = 3</li></b>
 <ul>
-The minimum number of points needed to estimate a circle is three. Hence, “S” is 
-taken as 3.
+Since the minimum number of points needed to estimate a circle is three, here I took “S” as 3.
 </ul><p><b><li>inliers count = 50</li></b></p>
 <ul>
-The entire dataset consists of 100 points in which 50 are outliers and the remaining 
-50 are inliers. Therefore, when an accurate circle estimation has been done, it should 
-contain all the 50 inlier points. Therefore, the consensus set size has been set to 50.
+The entire dataset consists of 100 points in which 50 are outliers and the remaining 50 are inliers. Therefore, it should contain all the 50 inlier points, when an accurate circle estimation has been done. Hence the consensus set size has been set to 50 as well.
 </ul><p><b><li>threshold = 1.96</li></b></p>
 <ul>
-The set of points corresponding to a circle has been corrupted by mean-zero variance-one Gaussian noise. Therefore, a threshold of 1.96 gives a 0.95 probability of capturing all inliers.
+Corresponding to a circle, the set of points has been corrupted by mean-zero, variance-one Gaussian noise. Therefore, a 0.95 probability of capturing all inliers is given by a threshold of 1.96.
 </ul><p><b><li>N = 35</li></b></p>
 <ul>
-Since the initial number of points(s) is chosen as 3, by the Number of Samples vs. 
-Outlier Ratio table, the number of samples(N) should be chosen as 35 to have a 
-probability of 0.99 for selecting at least one outlier free random sample. 
+We chose the initial number of points(s) as 3. Therefore by the Number of Samples vs. Outlier Ratio table, the number of samples(N) should be chosen as 35. Then we get a probability of 0.99 for selecting at least one outlier free random sample.
 </ul>
 </ul>
 </div>
